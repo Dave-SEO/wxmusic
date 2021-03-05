@@ -1,0 +1,6 @@
+<!--components/playList.wxml-->
+<view class="play" bindtap="touchMusicList">
+  <image src="{{playList.picUrl}}" class="playListImg"></image>
+  <view class="playListNum">{{_count}}</view>
+  <text class="playListName">{{playList.name}}</text>
+</view>

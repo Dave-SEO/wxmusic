@@ -1,0 +1,18 @@
+/* pages/found/found.wxss */
+.header{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 10rpx;
+  width: 94%;
+  background: #ffffff;
+  height: 120rpx;
+}
+.mysearch{
+  flex-grow: 1;
+}
+.icon{
+  width: 80rpx;
+  text-align: center;
+  font-size: 50rpx;
+}

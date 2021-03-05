@@ -1,0 +1,11 @@
+<!--components/progress/progress-bar.wxml-->
+<view class="progress-box">
+  <text class="time">{{durationTimes.startTime}}</text>
+  <view class="contr">
+    <movable-area class="movable-area">
+      <movable-view class="movable-view" direction="horizontal" damping="1000" x="{{movableX}}" bindchange="movableChange" bindtouchend="progressTouchend"></movable-view>
+    </movable-area>
+    <progress stroke-width="4" backgroundColor="#969696" activeColor="#fff" percent="{{progress}}"></progress>
+  </view>
+  <text class="time">{{durationTimes.endTime}}</text>
+</view>

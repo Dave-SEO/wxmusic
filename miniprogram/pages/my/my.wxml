@@ -1,0 +1,36 @@
+<!--pages/my/my.wxml-->
+<view>
+  <view class="header">
+    <view class="avtorBox">
+      <open-data type="userAvatarUrl" class="avtor"></open-data>
+    </view>
+    <open-data type="userNickName" class="userNickName"></open-data>
+  </view>
+  <view class="nav">
+    <view class="nav-item">
+      <navigator hover-class="none"
+      class="navigator"
+        url="/pages/historyPlay/historyPlay"
+      >
+        <i class="iconfont icon-zuijinbofang iconleft"></i>
+        <text>最近播放</text>
+        <i class="iconfont icon-fanhui iconright"></i>
+      </navigator>
+    </view>
+    <view class="nav-item">
+      <navigator hover-class="none" url="/pages/myblog/myblog"  class="navigator">
+        <i class="iconfont icon-weibiaoti-_huabanfuben iconleft"></i>
+        <text>我发布的</text>
+        <i class="iconfont icon-fanhui iconright"></i>
+      </navigator>
+    </view>
+
+    <view class="nav-item" bindtap="qrcode">
+      <navigator hover-class="none" class="navigator" >
+        <i class="iconfont icon-xiaochengxuma iconleft"></i>
+        <text>小程序码</text>
+        <i class="iconfont icon-fanhui iconright"></i>
+      </navigator>
+    </view>
+  </view>
+</view>

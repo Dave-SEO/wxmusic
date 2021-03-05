@@ -1,0 +1,4 @@
+<!--components/auth/auth.wxml-->
+<my-modal modal="{{modal}}" bind:closeModal="closeModal">
+  <button slot='slot1' open-type="getUserInfo" bindgetuserinfo="getuserinfo" type="warn" hover-class="hoverBtn">授权后使用</button>
+</my-modal>

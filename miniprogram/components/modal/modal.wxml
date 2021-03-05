@@ -1,0 +1,9 @@
+<!--components/modal/modal.wxml-->
+<view class="modalBox" hidden="{{!modal}}" >
+  <view class="modal" style="bottom:{{bottom}}px">
+    <view class="iconfont icon-chuyidong close" bindtap="close"></view>
+    <slot name="slot1"></slot>
+    <slot name="slot2"></slot>
+  </view>
+</view>
+ 

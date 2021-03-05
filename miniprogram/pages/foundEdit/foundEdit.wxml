@@ -1,0 +1,21 @@
+<!--pages/foundEdit/foundEdit.wxml-->
+
+  <textarea  placeholder="分享新鲜事儿" bindinput="textareaInput" maxlength="140" class="textarea" auto-focus="true" bindfocus="textareaFocus" bindblur="textareaBlur"></textarea>
+    <view class="imgContent">
+    <!-- 图片展示 -->
+    <block wx:for="{{imgData}}" wx:key="item">
+      <view class="imagesBox"  data-img="{{item}}">
+        <image src="{{item}}" mode="aspectFill" class="img" bindtap="tapImg"></image>
+        <i class="iconfont icon-chuyidong icon-del" bindtap="deleteImg" data-index="{{index}}"></i>
+      </view>
+    </block>
+    <!-- 图片添加按钮 -->
+      <view class="addimg" bindtap="selectImg" hidden="{{!selectImgBtn}}">
+        <i class="icon-add">➕</i>
+      </view>
+    </view>
+
+    <view class="footer" style="bottom:{{bottom}}">
+      <text class="words">{{wordsNum}}</text>
+      <button type="warn" hover-class="none" bindtap="send" class="btn">确定</button>
+    </view>

@@ -1,0 +1,2 @@
+<!--pages/historyPlay/historyPlay.wxml-->
+<my-music-list musicData="{{musicList}}" />

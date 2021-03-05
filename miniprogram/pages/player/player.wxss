@@ -1,0 +1,101 @@
+/* pages/player/player.wxss */
+.mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333333;
+  z-index: -2;
+}
+.picUrlmask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  filter: blur(40rpx);
+}
+.pieBox{
+
+}
+.pie{
+    width: 496rpx;
+    height: 496rpx;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.picUrl{
+  width: 310rpx;
+    height: 310rpx;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    top: 16%;
+}
+.rotate{
+  animation: picrator 12s linear infinite;
+}
+@keyframes picrator {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.needle{
+  width: 168rpx;
+  height: 244rpx;
+  background-size: cover;
+  position: absolute;
+  top: -4rpx;
+  left: 358rpx;
+  transform: rotate(-13deg);
+  transform-origin: 24rpx 10rpx;
+  transition: transform .7s ease;
+}
+.needleRotate {
+  transform: rotate(7deg);
+}
+.playBox{ 
+  color: #efefef;
+  position: absolute;
+  transform: translate(-50%, 10%);
+  left: 50%;
+  bottom: 300rpx;
+}
+.playBox .iconfont{
+  font-size: 80rpx;
+}
+.icon-bofang, .icon-zanting{
+  margin: 0 30rpx;
+}
+.progressParent{
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  bottom: 33%;
+  transform: translateX(-50%);
+}
+.lyricBox{
+  width: 70%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) ;
+}

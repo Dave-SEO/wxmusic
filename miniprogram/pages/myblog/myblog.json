@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "blog-card":"/components/blog-card/blog-card",
+    "my-comments": "/components/comments/comments"
+  },
+  "navigationBarTitleText": "我发布的",
+  "navigationBarTextStyle": "white"
+}

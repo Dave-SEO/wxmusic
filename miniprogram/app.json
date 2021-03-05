@@ -1,25 +1,46 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/musicList/musicList",
+    "pages/found/found",
+    "pages/my/my",
+    "pages/playlist/playlist",
+    "pages/player/player",
+    "pages/foundEdit/foundEdit",
+    "pages/blogDetail/blogDetail",
+    "pages/historyPlay/historyPlay",
+    "pages/myblog/myblog"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarBackgroundColor": "#d53a33",
+    "navigationBarTitleText": "云音乐",
     "navigationBarTextStyle": "black"
+  },
+  "requiredBackgroundModes": ["audio"],
+  "tabBar": {
+    "color": "#474747",
+    "selectedColor": "#d53a33",
+    "list": [
+      {
+        "pagePath": "pages/musicList/musicList",
+        "text": "音乐",
+        "iconPath": "images/music.png",
+        "selectedIconPath": "images/music-actived.png"
+      },
+      {
+        "pagePath":  "pages/found/found",
+        "text": "发现",
+        "iconPath": "images/found.png",
+        "selectedIconPath": "images/found-actived.png"
+      },
+      {
+        "pagePath":  "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-actived.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"

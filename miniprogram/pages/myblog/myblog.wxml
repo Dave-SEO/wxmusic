@@ -1,0 +1,7 @@
+<!--pages/myblog/myblog.wxml-->
+<view>
+  <block wx:for="{{blog}}" wx:key="*this">
+    <blog-card card="{{item}}" data-id="{{item._id}}" bindtap="detail"></blog-card>
+    <my-comments blogid="{{item._id}}" blogitem="{{item}}"></my-comments>
+  </block>
+</view>

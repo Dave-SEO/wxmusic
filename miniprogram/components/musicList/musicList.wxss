@@ -1,0 +1,23 @@
+/* components/musicList/musicList.wxss */
+.musicCompent{
+  display: flex;
+  justify-content: flex-start;
+  height: 100rpx;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+.num{
+  width: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.musicName{
+  flex-grow: 1;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.playing{
+  color: red;
+}

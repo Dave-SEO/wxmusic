@@ -1,0 +1,24 @@
+<!--pages/found/found.wxml-->
+<view style="height:120rpx;background: #fff;position: relative;">
+  <view class="header">
+    <i class="iconfont icon-boke icon" bindtap="openmodal"></i>
+    <my-search class="mysearch" bind:onSearch="onSearch"></my-search>
+  </view>
+</view>
+
+<view>
+  <block wx:for="{{blogCard}}" wx:key="*this">
+    <blog-card card="{{item}}" data-id="{{item._id}}" bindtap="detail"></blog-card>
+    <my-comments blogid="{{item._id}}" blogitem="{{item}}"></my-comments>
+  </block>
+</view>
+
+<my-auth 
+  modal="{{modal}}" 
+  bind:closeModal="closeModal"
+  bind:onAuthSuccess="onAuthSuccess"
+  bind:onAuthError="onAuthError"
+>
+</my-auth>
+
+

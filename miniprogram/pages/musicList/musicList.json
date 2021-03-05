@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-playList": "/components/playList/playList"
+  },
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

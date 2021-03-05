@@ -1,0 +1,22 @@
+<!--components/blog-card/blog-card.wxml-->
+<view class="blogCardContent">
+  <view class="header">
+    <i class="avtor" style="background-image:url('{{card.avatarUrl}}')"></i>
+    <view class="header-right">
+      <text>{{card.nickName}}</text>
+      <text class="time">{{createTime}}</text>
+    </view>
+  </view>
+
+  <view class="contet">
+    {{card.desc}}
+  </view>
+
+  <view class="imagesContent" >
+    <block wx:for="{{card.fileID}}" wx:key="*this">
+      <view class="imgBox" data-img="{{item}}" data-imgarr="{{card.fileID}}" catchtap="priveImg">
+        <image src="{{item}}" ></image>
+      </view>
+    </block>
+  </view>
+</view>

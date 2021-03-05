@@ -1,0 +1,23 @@
+<!--pages/blogDetail/blogDetail.wxml-->
+<blog-card card="{{detail}}" data-id="{{detail._id}}" bindtap="detail"></blog-card>
+<view>
+  <text class="title">评论列表</text>
+  <view>
+    <block wx:for="{{comments}}" wx:key="item">
+      <view class="comment-list">
+      <view class="header">
+        <i class="avtor" style="background-image:url('{{item.avatarUrl}}')"></i>
+        <view class="header-right">
+          <text>{{item.nickName}}</text>
+          <text class="time">{{item.createTime}}</text>
+        </view>
+      </view>
+      <text class="content">{{item.content}}</text>
+  </view>
+  </block>
+  </view>
+ 
+  <view class="comments">
+    <my-comments blogid="{{blogId}}" bindonCommentSuccess="onCommentSuccess"></my-comments>
+  </view>
+</view>

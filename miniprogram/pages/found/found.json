@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "my-search":"/components/search/search",
+    "my-auth": "/components/auth/auth",
+    "blog-card":"/components/blog-card/blog-card",
+    "my-comments": "/components/comments/comments"
+  },
+  "navigationBarTitleText": "发现",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

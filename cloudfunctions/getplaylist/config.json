@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "openapi": [
+    ]
+  },
+  "triggers": [
+    {
+      "name": "PlayListTrigger",
+      "type": "timer",
+      "config": "0 0 7,13,23 * * * *"
+    }
+  ]
+}

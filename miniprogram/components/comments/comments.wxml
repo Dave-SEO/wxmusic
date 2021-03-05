@@ -1,0 +1,25 @@
+<!--components/comments/comments.wxml-->
+<view class="commentBox">
+  <i class="iconfont icon-comment comment" catchtap="comment"></i>
+  <button open-type="share" class="iconfont icon-fenxiang fenxiang" catchtap="fenxiang" hover-class="btn-hover" data-item="{{blogitem}}"></button>
+</view>
+<my-auth 
+  modal="{{modal}}" 
+  bind:closeModal="closeModal"
+  bind:onAuthSuccess="onAuthSuccess"
+  bind:onAuthError="onAuthError"
+>
+</my-auth>
+
+<my-modal modal="{{isComment}}" bind:closeModal="closeModal" bottom="{{bottom}}">
+  <form slot='slot1' bind:submit="sendComment" report-submit="true">
+    <textarea class="textarea" maxlength="140" 
+      name='content'  
+      value="{{content}}" placeholder="请友善发言哦～"
+      bindfocus="textareaFocus"
+      bindblur="textareaBlur"
+      adjust-position="false"
+    ></textarea>
+    <button type="primary" form-type="submit">发送</button>
+  </form>
+</my-modal>

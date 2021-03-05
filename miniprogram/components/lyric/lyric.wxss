@@ -1,0 +1,13 @@
+/* components/lyric/lyric.wxss */
+.lyricView{
+  text-align: center;
+  color: snow;
+  height: 500rpx;
+}
+.lrc{
+  height: 84rpx;
+  line-height: 84rpx;
+}
+.lrcActive{
+  color: gold;
+}

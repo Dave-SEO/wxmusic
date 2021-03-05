@@ -1,0 +1,28 @@
+/* components/modal/modal.wxss */
+.modalBox{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background:rgba(0, 0, 0, 0.6)
+}
+.modal{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 400rpx;
+  background: #fff;
+  border-top: 1rpx solid #c1c1c1;
+  border-top-left-radius: 25rpx;
+  border-top-right-radius: 25rpx;
+}
+.close{
+  position: absolute;
+  right: 6rpx;
+  top: 6rpx;
+  font-size: 50rpx;
+  padding: 10px;
+  z-index: 1;
+}

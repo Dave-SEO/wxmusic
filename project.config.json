@@ -2,7 +2,7 @@
   "miniprogramRoot": "miniprogram/",
   "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -37,20 +37,18 @@
     "packNpmRelationList": [],
     "minifyWXSS": true
   },
-  "appid": "wx4e37f88230f0983c",
+  "appid": "wx219338aa01a16cf3",
   "projectname": "music",
-  "libVersion": "2.14.4",
+  "libVersion": "2.15.0",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
     "game": {
+      "list": []
+    },
+    "gamePlugin": {
       "list": []
     },
     "miniprogram": {
@@ -58,7 +56,50 @@
         {
           "id": -1,
           "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide"
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "playlist",
+          "pathName": "pages/playlist/playlist",
+          "query": "playlistid=5375524904",
+          "scene": null
+        },
+        {
+          "name": "pages/found/found",
+          "pathName": "pages/found/found",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/foundEdit/foundEdit",
+          "pathName": "pages/foundEdit/foundEdit",
+          "query": " avatarUrl=https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIW5Lsxc1o4dHxfHwfd9tMicXS7bBwwGveqNmJz8EotOEhjpyrZ3oVn8ykzkzpMNnIIuwtCSq6sibeA/132&nickName=陌尘",
+          "scene": null
+        },
+        {
+          "name": "pages/blogDetail/blogDetail",
+          "pathName": "pages/blogDetail/blogDetail",
+          "query": "id=b00064a7601ea0110322fafc01432b7d",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "id=b00064a7601ea0110322fafc01432b7d",
+          "scene": null
+        },
+        {
+          "name": "pages/historyPlay/historyPlay",
+          "pathName": "pages/historyPlay/historyPlay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/myblog/myblog",
+          "pathName": "pages/myblog/myblog",
+          "query": "",
+          "scene": null
         }
       ]
     }

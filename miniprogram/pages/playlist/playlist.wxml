@@ -1,0 +1,8 @@
+<!--pages/playlist/playlist.wxml-->
+<view class="playlistBox">
+  <view class="mask"></view>
+  <image src="{{muiscInfo.coverImgUrl}}" class="coverImgUrl"></image>
+  <image src="{{muiscInfo.coverImgUrl}}" class="avtar"></image>
+  <text class="name">{{muiscInfo.name}}</text>
+</view>
+<my-music-list musicData="{{musicList}}" />

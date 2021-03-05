@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-auth": "../auth/auth",
+    "my-modal":"../modal/modal"
+  }
+}

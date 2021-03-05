@@ -1,0 +1,22 @@
+<!--pages/player/player.wxml-->
+<view class="mask"></view>
+<view class="picUrlmask" style="background-image:url({{currentMusicInfo.picUrl}})"></view>
+<view class="pieBox" bindtap="toggleLyric" hidden="{{isLyric}}">
+  <view class="pie" style="background-image: url({{'https://s3.music.126.net/mobile-new/img/disc.png?d3bdd1080a72129346aa0b4b4964b75f='}});"></view>
+  <view class="picUrl {{playing ? 'rotate' : ''}}" style="background-image:url({{currentMusicInfo.picUrl}})"></view>
+  <view class="needle {{playing ? 'needleRotate' : ''}}" style="background-image: url({{'https://s3.music.126.net/m/s/img/needle.png?702cf6d95f29e2e594f53a3caab50e12'}});"></view>
+</view>
+<my-lyric lyric="{{lyricStr}}" class="lyricBox" bindtap="toggleLyric" showLyric="{{!isLyric}}"></my-lyric>
+<progress-bar 
+  class="progressParent" 
+  bind:emitNextMusic="next"
+  bind:updateTime="updateTime"
+  bind:onPlay='onPlay'
+  bind:onPause ='onPause'
+  isSame="{{isSame}}"
+  ></progress-bar>
+<view class="playBox">
+  <text class="iconfont icon-shangyishou" bindtap="prev"></text>
+  <text class="iconfont {{playing ? 'icon-zanting' : 'icon-bofang'}}" bindtap="playtoggle"></text>
+  <text class="iconfont icon-xiayishou" bindtap="next"></text>
+</view>

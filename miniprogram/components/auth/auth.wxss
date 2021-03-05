@@ -1,0 +1,8 @@
+/* components/auth/auth.wxss */
+button[type='warn'] {
+  background: #fa5151;
+  color: #fff;
+}
+.hoverBtn{
+  background: #ce3c39 !important;
+}
